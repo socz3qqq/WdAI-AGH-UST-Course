@@ -1,0 +1,119 @@
+html{
+    background-color: rgb(220, 214, 214);
+}
+#paragraph-1{
+    width: 100%;
+    float: left;
+    background-color: aqua;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 600;
+    font-size: medium;
+    color: rgb(66, 60, 60);
+    padding: 5px;
+    /* border-radius: 10px;
+    border-color: black;
+    border-width: 5px;
+    border: 10px; */
+    border: 2px solid rgba(68, 64, 64, 0.567);
+    border-radius: 10px;
+    margin: 0;
+    overflow:hidden;
+}
+#paragraph-2{
+    background-color: rgb(234, 0, 255);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    font-size: x-large;
+    color:rgb(253, 225, 10);
+    height: 100px;
+    overflow: scroll;
+    padding: 5px 10px 0 50px;
+    border: 2px double grey;
+    border-radius: 20px 20px 200px 0;
+    margin: 0;
+}
+#paragraph-3{
+    background-color: rgb(60, 0, 255);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:bold;
+    font-size: xx-large;
+    color: grey;
+    width: 700px;
+    height: 500px;
+    overflow: hidden;
+    margin: 0;
+    border-left: 10px dotted black;
+    border-right: 10px dotted black;
+    padding: 2px 0 0 50px;
+}
+#paragraph-4{
+    background-color: rgb(253, 225, 10);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 400;
+    font-size: small;
+    font-style: italic;
+    color: grey;
+    margin-top: 0;
+    padding: 5rem 1rem 1rem 1rem;
+    border: double 5px green;
+    border-radius: 0 200px 10px 10px;
+}
+#table-1, #table-2{
+    width: 100vw;
+    margin-top: 20px;
+}
+.row{
+    width: 100vw;
+    height: 50px;
+    color: black;
+}
+.head-el{
+    background-color: rgb(0, 94, 255);
+}
+.row-el{
+    width: 25vw;
+    height: 25px;
+}
+.row-even{
+    background-color: rgb(172, 182, 178);
+}
+.row-uneven{
+    background-color: rgb(156, 176, 188);
+}
+.t2-row-el{
+    background-color: rgb(198, 158, 158);
+    width: 33vw;
+}
+.image-1{
+    float: left;
+    margin: 2px 20px 0 5px;
+}
+.image-2{
+    float: right;
+    width: 10%;
+    height: 10%;
+    border: 0px solid red;
+    border-radius: 50px;
+}
+.image-3{
+    position: absolute;
+    right: 0px;
+}
+#Europe{
+    background-color: rgb(0, 153, 255);
+}
+#Asia{
+    background-color: red;
+}
+#EU-el-2{
+    position: relative;
+    top: -1.5em;   
+}
+#EU-el-1{
+    position: relative;
+    bottom: -3rem;
+}
+#EU-el-3{
+    position: relative;
+    top: -1.5rem;
+}

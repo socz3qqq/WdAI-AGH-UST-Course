@@ -1,0 +1,31 @@
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 2px;
+    background-color: rgb(108, 107, 107);
+    padding: 30px;
+}
+.grid-container > div{
+    background-color: blueviolet;
+    text-align: center;
+    padding: 3rem 0;
+}
+.item1{
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+.item7{
+    grid-column-start: 2;
+    grid-column-end: 5;
+}
+.item8{
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+.image{
+    position: absolute;
+    left: 5rem;
+    top: 5rem;
+    width: 20%;
+    height: 7%;
+}

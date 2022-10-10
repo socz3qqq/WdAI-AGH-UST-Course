@@ -1,0 +1,9 @@
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.flex-item{
+    flex: 30%;
+    background-color: lightblue;
+    padding: 1rem;
+}
