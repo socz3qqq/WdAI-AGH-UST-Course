@@ -1,9 +1,13 @@
 .container{
     display: flex;
+    gap: 10px;
     flex-wrap: wrap;
 }
 .flex-item{
-    flex: 30%;
     background-color: lightblue;
     padding: 1rem;
+    flex: 1;
+}
+.flex-item:nth-of-type(1){
+    flex: 5;
 }
