@@ -1,0 +1,273 @@
+:root{
+    --shoecolor: rgb(8, 116, 210);
+}
+html, body{
+    padding: 0;
+    margin: 0;
+}
+
+main{
+    width: 100%;
+    padding: auto;
+    margin-top: 10rem;
+}
+.shoe-card{
+    display: flex;
+    margin: auto;
+    max-width: 750px;
+
+}
+div.shoe-card > *{
+    box-sizing: border-box;
+    width: 50%;
+}
+.background{
+    position: absolute;
+    background: linear-gradient(45deg, var(--shoecolor) 20%, rgb(252, 252, 252) 150%);
+    width: 100%;
+    height: 85%;
+    top: 7.5%;
+    box-shadow: 10px 0 40px rgba(0, 0, 0, 0.2);
+}
+.card-content{
+    padding: 1rem;
+    box-shadow: 10px 0 60px rgba(0, 0, 0, 0.2);
+}
+
+input[name=color], input[name='size']{
+    display: none;
+}
+input#red:checked ~ main{
+    --shoecolor: red;
+}
+input#green:checked ~ main {
+    --shoecolor: green;
+}
+input#orange:checked ~ main {
+    --shoecolor: orange;
+}
+input#black:checked ~ main {
+    --shoecolor: black;
+}
+
+.sizes label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: visible;
+    height: 32px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: #ddd;
+    cursor: pointer;
+}
+
+input[id="s7"]:checked ~ label[for="s7"] {
+    background-color: var(--shoecolor);
+    color: white;
+}
+input[id="s8"]:checked ~ label[for="s8"] {
+    background-color: var(--shoecolor);
+    color: white;
+}
+input[id="s9"]:checked ~ label[for="s9"] {
+    background-color: var(--shoecolor);
+    color: white;
+}
+input[id="s10"]:checked ~ label[for="s10"] {
+    background-color: var(--shoecolor);
+    color: white;
+}
+input[id="s11"]:checked ~ label[for="s11"] {
+    background-color: var(--shoecolor);
+    color: white;
+}
+
+#s7:after {
+    content: '7';
+}
+
+#s8:after {
+    content: '8';
+}
+
+#s9:after {
+    content: '9';
+}
+
+#s10:after {
+    content: '10';
+}
+
+#s11:after {
+    content: '11';
+}
+
+label[for=blue] {
+    background-color: #2285f3;
+}
+
+label[for=red] {
+    background-color: #f32626;
+}
+
+label[for=green] {
+    background-color: #0cb954;
+}
+
+label[for=orange] {
+    background-color: #ff6333;
+}
+
+label[for=black] {
+    background: #464646;
+}
+
+label {
+    width: 28px;
+    height: 28px;
+    margin-right: 30px;
+    border-radius: 50%;
+    background-color: #d1d3d1;
+    border: 3px solid #fff;
+}
+
+label:hover {
+    cursor: pointer;
+}
+input#blue:checked ~ main .shoe-card .shoe img{
+    content: url('src/blue.png');
+}
+input#red:checked ~ main .shoe-card .shoe img{
+    content: url('src/red.png');
+}
+input#green:checked ~ main .shoe-card .shoe img{
+    content: url('src/green.png');
+}
+input#orange:checked ~ main .shoe-card .shoe img{
+    content: url('src/green.png');
+}
+input#black:checked ~ main .shoe-card .shoe img{
+    content: url('src/black.png');
+}
+input#blue:checked ~ main .shoe-card .card-content .colors label[for=blue],
+input#red:checked ~ main .shoe-card .card-content .colors  label[for=red],
+input#green:checked ~ main .shoe-card .card-content .colors label[for=green],
+input#orange:checked ~ main .shoe-card .card-content .colors  label[for=orange],
+input#black:checked ~ main .shoe-card .card-content .colors  label[for=black] {
+    border-color: #f7f7f7;
+    box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.2);
+}
+button#new-btn{
+    padding: 0.3rem 0.7rem;
+    background-color: var(--shoecolor);
+    border: 0;
+    border-radius: 10%;
+    height: 1.8rem;
+    color: white;
+    font-weight: 550;
+}
+h1.shoe-type{
+    display: flex;
+    margin-bottom: 0;
+}
+h1.shoe-type button{
+    margin-left: 0.5rem;
+    display: flex;
+    align-self: center;
+}
+h3.subtitle{
+    font-size: 1.1rem;
+    color:rgba(0, 0, 0, 0.628);
+    margin: 0;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.751);
+}
+h2{
+    font-size: 1.2rem;
+    margin-bottom: 0;
+}
+p.description{
+    margin-top: 0.2rem;
+    color: #464646;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.751);
+}
+div.colors, div.sizes{
+    padding: 0.5rem;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.751);
+}
+.colors, .sizes{
+    display: flex;
+    justify-content: space-between;
+
+}
+.shoe{
+    position: relative;
+}
+.shoe img{
+    top: 20%;
+    position: absolute;
+    height: 65%;
+    right: 5%;
+    transform: rotate(-20deg);
+}
+.price{
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+.price button{
+    background-color: var(--shoecolor);
+    border: 0;
+    padding: 0.8rem;
+    color: white;
+    font-weight: 600;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+h2.price-val{
+    margin: auto;
+    font-size: 1.7rem;
+    font-weight: 900;
+}
+@media (max-width: 950px) {
+    body{
+        margin: 1em;
+    }
+    main{
+        margin-top: 0;
+        width: 100%;
+    }
+    .shoe-card {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .shoe{
+        width: 100%;
+        height: 300px;
+
+    }
+    div.shoe-card > *{
+        max-width: 500px;
+        width: 100%;
+        margin: auto;
+    }
+    .background{
+        width: 100%;
+        height: 100%;
+    }
+    .shoe img{
+        top: 10%;
+        position: absolute;
+        height: min(100%, 100vh);
+        width: min(100%, 100vw);
+        right: 1%;
+        left: auto;
+        transform: rotate(0);
+        overflow: hidden;
+    }
+}

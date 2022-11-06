@@ -22,7 +22,7 @@
     grid-column-start: 1;
     grid-column-end: 5;
 }
-.image{
+.logo{
     position: absolute;
     left: 5rem;
     top: 5rem;
