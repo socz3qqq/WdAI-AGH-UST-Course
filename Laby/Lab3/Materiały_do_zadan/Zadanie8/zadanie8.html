@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie 8</title>
+    <link rel="stylesheet" href="style8.css">
+    <script src="script8.js" defer></script>
+    <script src="https://kit.fontawesome.com/88c20eabb5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="form-content">
+        <form action="">
+            <label for="password"> New password</label><br>
+            <input type="password" name="password" id="password"><i id="eye1" class="fa-regular fa-eye"></i><br>
+            <label for="passwordConfirm">Repeat new password</label><br>
+            <input type="password" name="passwordConfirm" id="password-confirm"><i id="eye2" class="fa-regular fa-eye"></i><br>
+
+            <div id="password-requirements">
+                <h3>Password requirements</h3>
+                <span class="condition">
+                    <i  id="characters" class="fa-sharp fa-solid fa-circle-xmark"></i> at least 8 characters
+                </span>
+                <span class="condition">
+                    <i id="special-characters" class="fa-sharp fa-solid fa-circle-xmark"></i> at least one special character
+                </span>
+                <span class="condition">
+                    <i id="capital-letter" class="fa-sharp fa-solid fa-circle-xmark"></i> at least one capital letter
+                </span>
+                <span class="condition">
+                    <i id="digit" class="fa-sharp fa-solid fa-circle-xmark"></i> at least one digit
+                </span>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
