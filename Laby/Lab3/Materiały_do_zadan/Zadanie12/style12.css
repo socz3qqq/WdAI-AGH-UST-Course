@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+#game-menu{
+    box-sizing: border-box;
+    font-size: 2em;
+    position: absolute;
+    z-index: 999;
+    cursor: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.7em;
+    background-color: rgb(161, 17, 17);
+    border: 5px dashed black;
+    width: 80vw;
+    height: fit-content;
+    padding: 1em;
+    margin: auto;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    transition: transform 1s;
+}
+#start-game{
+    font-size: inherit;
+    max-width: fit-content;
+    padding: 0.5em 4em;
+    cursor: pointer;
+}
+input{
+    font-size: 1em;
+    text-align: center;
+    padding: 1em;
+    background-color: rgb(131, 122, 122);
+    border: 15px groove grey;
+    border-radius: 10px;
+}
+p{
+    text-align: justify;
+    width: 100%; 
+}
+#game-area{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('images/board-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+    cursor: none;
+}
+.zombie{
+    position: absolute;
+    width: 200px;
+    height: 312px;
+    background-image: url("images/walkingdead.png");
+    z-index: 100;
+}
+#score{
+    font-size: 5em;
+    font-weight: bold;
+    position: absolute;
+    right: 0.5em;
+    top: 0.2em;
+    color: white;
+}
+#health{
+    font-size: 5em;
+    color: white;
+    position: absolute;
+    left: 0.5em;
+    top: 0.2em;
+}
+#nick{
+    font-size: 4em;
+    font-weight: bold;
+    position: absolute;
+    max-height: fit-content;
+    max-width: fit-content;
+    color: white;
+    left: 0;
+    right: 0;
+    top: 0.1em;
+    margin: 0 auto;
+}
+#crosshair{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border: 5px solid lightgray;
+    border-radius: 50%;
+    z-index: 999;
+    pointer-events: none;
+    display: none;
+}
+.gunpoint{
+    position: inherit;
+    background-color: red;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin: auto;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}

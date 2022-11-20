@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    width: 100%;
+}
+#form-content{
+    padding: 2em 0;
+    display: flex;
+    justify-content: center;
+}
+#password-requirements{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+label{
+    font-size: 1.2em;
+}
+input{
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding: 1em;
+    margin: 1em 0;
+    width: 20em;
+}
+i{
+    opacity: 0.6;
+}
+
+i.fa-circle-check{
+    color:green;
+}
+i.fa-eye-slash, i.fa-eye{
+    position: relative;
+    left: -2em;
+    cursor: pointer;
+}
